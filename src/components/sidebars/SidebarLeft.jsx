@@ -1,8 +1,8 @@
 import React from 'react'
-import '../css/Sidebar.css'
-import { SidebarData } from './SidebarData'
+import '../../css/Sidebar.css'
+import { SidebarData } from '../SidebarData'
 
-function Sidebar() {
+function SidebarLeft() {
   return (
     <div className='Sidebar-main'>
       <ul className='SidebarList'>
@@ -21,4 +21,4 @@ function Sidebar() {
   )
 }
 
-export default Sidebar
+export default SidebarLeft

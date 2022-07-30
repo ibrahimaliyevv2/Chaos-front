@@ -1,0 +1,23 @@
+.sidebar-right{
+    position: absolute;
+    right: 0;
+
+    .recent-chat{
+        .title{
+            h3{
+                font-size: 18px;
+            }
+        }
+
+        .chat-items{
+            .chat-item{
+                a{
+                    img{
+                        width: 50px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

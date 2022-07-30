@@ -9,7 +9,7 @@ function PostForm({ className }) {
             }}>
                 <FormGroup row>
 
-                    <textarea className='mw-100' cols="10" rows="5" style={{ resize: 'none' }}></textarea>
+                    <textarea className='mw-100' cols="10" rows="5"></textarea>
                 </FormGroup>
 
                 <Button variant="primary" type="submit">

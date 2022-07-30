@@ -1,0 +1,14 @@
+.sidebar-right {
+  position: absolute;
+  right: 0;
+}
+
+.sidebar-right .recent-chat .title h3 {
+  font-size: 18px;
+}
+
+.sidebar-right .recent-chat .chat-items .chat-item a img {
+  width: 50px;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=SidebarRight.css.map */

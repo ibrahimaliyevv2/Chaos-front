@@ -18,7 +18,7 @@ export const SidebarData = [
     {
         title:"News Feed",
         icon:<NewspaperOutlinedIcon/>,
-        link:'/feed'
+        link:'/home'
     },
     {
         title:"Notifications",

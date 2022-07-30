@@ -1,19 +1,22 @@
 import React, { Component } from 'react'
 import ProfileCard from '../components/cards/ProfileCard'
-import Sidebar from '../components/Sidebar'
 import PostForm from '../components/forms/PostForm'
-import { Col, Row } from 'reactstrap'
-
+import '../css/Home.css';
+import {Container, Col, Row } from 'reactstrap'
+import SidebarLeft from '../components/sidebars/SidebarLeft';
+import SidebarRight from '../components/sidebars/SidebarRight';
+import Photo1 from '../img/profile-photo.jpeg'
 
 export default class Home extends Component {
   render() {
     return (
-      <>
+      <Container fluid>
         <Row>
-          <Col sm={2} md={2} lg={2}>
-            <Sidebar />
+          <Col md={2} lg={2}
+          style={{padding: '0'}}>
+            <SidebarLeft />
           </Col>
-          <Col sm={2} md={2} lg={2}>
+          <Col md={2} lg={2}>
             <ProfileCard
               title={'Test'}
               tag={'h6'}
@@ -26,7 +29,7 @@ export default class Home extends Component {
               img={'https://picsum.photos/300/200'}
             />
           </Col>
-          <Col sm={2} md={2} lg={4}>
+          <Col md={4} lg={4}>
             <PostForm className={'mt-3'} />
           </Col>
           <Col md={2}>
@@ -58,24 +61,15 @@ export default class Home extends Component {
             </Col>
           </Col>
           <Col md={2}>
-          <Col>
-              <ProfileCard
-              title={'Card2'}
-              tag={'h6'}
-              style={{
-                width: '14em'
-              }}
-              subtitle = {'Card2 subtitle'}
-              description={"TEST"}
-              className={'mt-3'}
-              img={'https://picsum.photos/300/200'}
-              />
-              </Col>
+                <SidebarRight
+                img={Photo1}
+                name={"Girl Girly"}
+                />
           </Col>
         </Row>
 
 
-      </>
+      </Container>
     )
   }
 }
